@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html,
 body {
   margin:0;
@@ -11,6 +55,7 @@ body {
 }
 
 #content {
+  position: relative;
   padding-bottom:10px; 
   margin:0 auto 30px;
   width: 830px;
@@ -45,7 +90,7 @@ a{
  	color:#369;
  }
 
-a:hover{
+li a:hover{
 	color:#6699cc;
 }
 
@@ -74,6 +119,7 @@ h1{
 	-webkit-margin-before: 0.30em;
 	-webkit-margin-after: 0.0em;
 	letter-spacing: -2px;
+	margin-bottom: 20px;
 }
 
 h2{
@@ -94,10 +140,11 @@ h2{
 }
 
 .box{
+	position: relative;
 	border:1px solid #e8e8e8;
 	width: 160px;
 	display:inline-block;
-	margin: 10px 20px 6px;
+	margin: 30px 20px 6px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #efefef;
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -112,8 +159,9 @@ h3{
 	font-size: 21px;
 }
 
-h3 span{
+span{
 	text-decoration: underline;
+	color:#369;
 }
 
 sup{
@@ -133,6 +181,7 @@ h4{
 	font-size: 14px;
 	color: #222222;
 	line-height: 19.5px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 hr{
@@ -217,4 +266,67 @@ h5{
 	text-align: right;
 	margin: 10px 0 30px;
 }
+
+.boxarrowright{
+	position: absolute;
+	display: none;
+	left:140px;
+	top:-30px;
+}
+
+.boxarrowleft{
+	position: absolute;
+	display: none;
+	left:-12px;
+	top:-30px;
+}
+
+#banner{
+	display: block;
+	width: 830px;
+	height: 160px;
+}
+
+#bc-banner{
+	display: none;
+	position: absolute;
+	width: 830px;
+	height: 200px;
+	top: 70px;
+	background-color: white;
+}
+
+
+#hr-banner{
+	display: none;
+	position: absolute;
+	width: 830px;
+	height: 200px;
+	top: 70px;
+	background-color: white;
+}
+
+#cf-banner{
+	display: none;
+	position: absolute;
+	width: 830px;
+	height: 200px;
+	top: 70px;
+	background-color: white;
+}
+
+.alt{
+	font-size: 46px;
+	line-height: 46px;
+	margin-bottom: 15px;
+	letter-spacing: -1px;
+}
+
+.descriptions{
+	font-size: 15px;
+	color: #222222;
+	line-height: 19.5px;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
 
